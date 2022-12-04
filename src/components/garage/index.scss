@@ -1,0 +1,91 @@
+.garage {
+  .title,
+  .text {
+    margin-bottom: 4px;
+		color: black;
+  }
+}
+
+.cars {
+  margin-top: 20px;
+
+  .select-btn {
+    margin-right: 6px;
+  }
+
+  .car {
+    width: 100px;
+		height: 20px;
+    transform: translateY(52px);
+  }
+
+  .car-model {
+    margin-left: 16px;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(71, 74, 204);
+    border-left: 2px solid rgb(192, 120, 107);
+  }
+}
+
+
+.way {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2.5px solid black;
+
+  .car-control-container {
+    display: flex;
+  }
+
+  .engine-panel {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 12px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+
+    .engine-icon {
+      background: transparent;
+      border: 2px solid;
+      border-radius: 2px;
+
+      font-size: 22px;
+
+      cursor: pointer;
+    }
+
+    .engine-icon:disabled {
+      color: gray;
+      cursor: not-allowed;
+    }
+
+    .engine-icon.enabling {
+      color: yellow;
+    }
+  }
+
+  .start-engine-btn {
+    margin-bottom: 10px;
+
+    color: green;
+  }
+
+  .stop-engine-btn {
+    color: red;
+  }
+
+  .finish {
+    margin-top: -80px;
+
+    transform: translateY(58px) translateX(-120px);
+
+    img {
+      width: 124px;
+      height: 76px;
+    }
+  }
+}
